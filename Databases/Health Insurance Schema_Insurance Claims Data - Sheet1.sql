@@ -1,0 +1,54 @@
+CREATE DATABASE  IF NOT EXISTS `Health Insurance Schema` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `Health Insurance Schema`;
+-- MySQL dump 10.13  Distrib 5.7.36, for Linux (x86_64)
+--
+-- Host: 127.0.0.1    Database: Health Insurance Schema
+-- ------------------------------------------------------
+-- Server version	5.7.36-0ubuntu0.18.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Insurance Claims Data - Sheet1`
+--
+
+DROP TABLE IF EXISTS `Insurance Claims Data - Sheet1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Insurance Claims Data - Sheet1` (
+  `Number Enrolls` int(11) DEFAULT NULL,
+  `Number of Enrollees Part B` int(11) DEFAULT NULL,
+  `Average Payment Part A` int(11) DEFAULT NULL,
+  `Average Payment Part B` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Insurance Claims Data - Sheet1`
+--
+
+LOCK TABLES `Insurance Claims Data - Sheet1` WRITE;
+/*!40000 ALTER TABLE `Insurance Claims Data - Sheet1` DISABLE KEYS */;
+INSERT INTO `Insurance Claims Data - Sheet1` VALUES (0,10138926,7497739,'$248'),(1,6663517,6498765,'$1,314'),(2,4583587,4514823,'$2,998'),(3,2632736,2606318,'$5,968'),(4,1399364,1389361,'$10,784'),(5,649251,646544,'$17,537'),(6,251404,250820,'$26,153'),(7,80674,80613,'$36,243'),(8,19532,19543,'$46,766'),(9,2991,2996,'$56,014'),(10,225,225,'$68,333'),(0,1552910,1539298,'$716'),(1,1405876,1439872,'$2,286'),(2,1092821,1131680,'$4,414'),(3,806921,838053,'$7,683'),(4,558204,578539,'$12,572'),(5,339370,350926,'$19,110'),(6,175924,181503,'$27,390'),(7,75353,77374,'$36,690'),(8,23542,24085,'$46,137'),(9,4720,4841,'$54,212'),(10,381,386,'$62,888');
+/*!40000 ALTER TABLE `Insurance Claims Data - Sheet1` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-12-11 17:33:04
